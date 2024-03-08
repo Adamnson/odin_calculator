@@ -1,0 +1,30 @@
+.calculator {
+    width: 250px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="button"] {
+    width: 64px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.buttons div{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.line0 #zero {
+    width: 128px;
+}

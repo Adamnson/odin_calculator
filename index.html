@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer type="text/javascript" src="script.js" ></script>
+    <title>Odin Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>  
+        <div class="buttons">
+            <div class="linetop">      
+                <input type="button" value="AC" onclick="clearDisplay()">
+                <input type="button" value="&plus;/&minus;" onclick="addToDisplay('0')">
+    <!-- need to change--><input type="button" value="%" onclick="calculate()"> 
+                <input type="button" value="&divide;" onclick="addToDisplay('&divide;')">
+            </div>
+            <div class="line789">
+                <input type="button" value="7" onclick="addToDisplay('7')">
+                <input type="button" value="8" onclick="addToDisplay('8')">
+                <input type="button" value="9" onclick="addToDisplay('9')">
+                <input type="button" value="&times;" onclick="addToDisplay('&times;')">
+            </div>
+            <div class="line456">
+                <input type="button" value="4" onclick="addToDisplay('4')">
+                <input type="button" value="5" onclick="addToDisplay('5')">
+                <input type="button" value="6" onclick="addToDisplay('6')">
+                <input type="button" value="&minus;" onclick="addToDisplay('&minus;')">
+            </div>
+            <div class="line123">    
+                <input type="button" value="1" onclick="addToDisplay('1')">
+                <input type="button" value="2" onclick="addToDisplay('2')">
+                <input type="button" value="3" onclick="addToDisplay('3')">
+                <input type="button" value="&plus;" onclick="addToDisplay('&plus;')">
+            </div>
+            <div class="line0">      
+                <input type="button" value="0" onclick="addToDisplay('0')" id='zero'>
+                <input type="button" value="." onclick="addToDisplay('.')">
+                <input type="button" value="=" onclick="calculate()">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
