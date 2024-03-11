@@ -23,7 +23,8 @@ function operate (n1, n2, sign)
         default:
             console.log("Operation not valid");
     }
-    console.log(ans);
+    // #debug
+    // console.log(ans);
     return ans;
 }
 
@@ -32,7 +33,8 @@ function addToDisplay(value) {
     if (overwriteFlag) {clearDisplay();}
     if ( (value != '.') || ((value === '.') && !dispVal.includes('.') )) {
         document.getElementById('display').value += value;
-        console.log(document.getElementById('display').value);
+        // #debug
+        // console.log(document.getElementById('display').value);
     }
 }
 
@@ -63,13 +65,15 @@ function pushOperate(symbol) {
             operator = '+';
             break;
     }
-    console.log("opeartor :", operator);
+    // #debug
+    // console.log("opeartor :", operator);
 }
 
 function push() {
    firstNumber = parseFloat(document.getElementById('display').value);
-   console.log("first number :", firstNumber);
    overwriteFlag = 1;
+   // #debug
+   // console.log("first number :", firstNumber);
 }
 
 function calculate() {

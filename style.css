@@ -4,7 +4,8 @@
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #0000001a;
+    background-color: lavender;
 }
 
 input[type="button"] {
@@ -12,12 +13,19 @@ input[type="button"] {
     height: 40px;
     font-size: 18px;
     border-radius: 50%;
+    background-color: ivory;
 }
 
-input[type='button'] :active {
-    background-color: orangered;
+input[type='text'] {
+    width: 90%;
+    height: 25px;
+    margin: 10px;
+    text-align: right;
 }
 
+input[type='button']:active {
+    background-color:blanchedalmond;
+  }
 .buttons {
     display: flex;
     flex: 1;
@@ -29,7 +37,3 @@ input[type='button'] :active {
     flex: 1;
     justify-content: space-evenly;
 }
-
-/* .line0 #zero {
-    width: 128px;
-} */
