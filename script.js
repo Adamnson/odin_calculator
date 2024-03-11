@@ -82,6 +82,12 @@ function calculate() {
     overwriteFlag = 1;
 }
 
+function calculate(n1, op) {
+    secondNumber = parseFloat(document.getElementById('display').value);
+    document.getElementById('display').value = operate(secondNumber, n1, op);
+    overwriteFlag = 1;
+}
+
 function add(a, b) {
     return a+b;
 }
