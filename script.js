@@ -3,7 +3,6 @@ let secondNumber = 0;
 let operator = '';
 let overwriteFlag = 0;
 
-
 function operate (n1, n2, sign)
 {
     let ans = 0;
