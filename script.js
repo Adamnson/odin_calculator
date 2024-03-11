@@ -65,7 +65,7 @@ function pushOperate(symbol) {
             break;
     }
     // #debug
-    // console.log("opeartor :", operator);
+    console.log("opeartor :", operator);
 }
 
 function push() {
@@ -81,7 +81,7 @@ function calculate() {
     overwriteFlag = 1;
 }
 
-function calculate(n1, op) {
+function calculateTo(n1, op) {
     secondNumber = parseFloat(document.getElementById('display').value);
     document.getElementById('display').value = operate(secondNumber, n1, op);
     overwriteFlag = 1;

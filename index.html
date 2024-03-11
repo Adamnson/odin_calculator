@@ -14,9 +14,8 @@
         <div class="buttons">
             <div class="linetop">      
                 <input type="button" value="AC" onclick="clearDisplay()">
-                <input type="button" value="&plus;/&minus;" onclick="calculate(-1, 'x')">
+                <input type="button" value="&plus;/&minus;" onclick="calculateTo(-1, 'x')">
                 <input type="button" value="&larrb;" onclick="backspace()">
-    
                 <input type="button" value="&divide;" onclick="pushOperate('/')">
             </div>
             <div class="line789">
@@ -40,7 +39,7 @@
             <div class="line0">      
                 <input type="button" value="0" onclick="addToDisplay('0')" id='zero'>
                 <input type="button" value="." onclick="addToDisplay('.')">
-                <input type="button" value="%" onclick="calculate(100, '/')"> 
+                <input type="button" value="%" onclick="calculateTo(100, '/')"> 
                 <input type="button" value="=" onclick="calculate()">                
             </div>
         </div>
